@@ -31,7 +31,7 @@ REFINEMENT_TOPICS = [
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--k", type=int, default=8, help="Number of in-context examples to propose (crafting starts at 8).")
-    p.add_argument("--model-path", type=str, default="/gpfs/project/lox20cow/ms-swift/qwen7binstruct", help="Local path or HF id to qwen-2.5-7b-instruct.")
+    p.add_argument("--model-path", type=str, default="Qwen/Qwen2.5-7B-Instruct", help="Local path or HF id to qwen-2.5-7b-instruct.")
     p.add_argument("--eval-on-test", action="store_true", help="If set, run final evaluation on the TEST set at --dataset-path.")
     p.add_argument("--dataset-path", type=str, default="dataset/mr_test.jsonl", help="Path to mr_test.jsonl.")
     p.add_argument("--infer-dataset-path", type=str, default="dataset/mr_infer.jsonl", help="Path to mr_infer.jsonl.")
